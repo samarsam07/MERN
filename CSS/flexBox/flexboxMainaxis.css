@@ -1,0 +1,25 @@
+.container{
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+    /* flex-grow: 1; */
+ 
+}
+.item:nth-child(odd){
+    background-color: teal;
+}
+.item:nth-child(even){
+    background-color: palegreen;
+}
