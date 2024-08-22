@@ -1,0 +1,56 @@
+/* default style for all mobile */
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: teal;
+    height: 100vh;
+}
+p{
+    color: white;
+    font: size 2rem; ;
+}
+/* for larger mobiles */
+@media(min-width:375px){
+    .header{
+        background-color: yellow;
+    }
+    p{
+        color: black;
+        font-size: 5rem;
+    }
+}
+/* tablet */
+@media(min-width:768px){
+    .header{
+        background-color: green;
+        
+    }
+    p{
+        color: teal;
+        font-size: 8rem;
+    }
+}
+/* small desktop */
+@media(min-width:1280px){
+    .header{
+        background-color:red;
+        
+    }
+    p{
+        color: yellow;
+        font-size: 10rem;
+    }
+}
+/* large desktop */
+@media(min-width:1440px){
+    .header{
+        background-color: lightpink;
+        
+    }
+    p{
+        color: brown;
+        font-size: 12rem;
+    }
+}

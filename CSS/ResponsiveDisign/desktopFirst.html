@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            padding: 40px;
+            font-size: 28px;
+        }
+        
+        /* small desktop */
+        @media(max-width:1439px){
+           .header{
+            background-color: orange;
+            height: 80px;
+           }
+        }
+           /* tablets */
+           @media(max-width:1279px){
+           .header{
+            background-color:green;
+            height: 80px;
+           }
+        }
+        /* phones */
+        @media(max-width:767px){
+           .header{
+            background-color: rebeccapurple;
+            height: 80px;
+           }
+        }
+        /* small phones */
+        @media(max-width:374px){
+           .header{
+            background-color: teal;
+            height: 80px;
+           }
+        }
+        
+    </style>
+    <title>Desktop</title>
+</head>
+<body>
+    <header class="header">DeskTop</header>   
+</body>
+</html>
