@@ -28,3 +28,35 @@ const result1=lowerStr.toUpperCase();
 
 const upperStr="HELLO WORLD";
 const result2=upperStr.toLowerCase();
+// String Length
+
+const mystr="hello world";
+const len=mystr.length;
+
+// String.slice method 
+const str3="hello, world";
+const ext=str3.slice(7,12);
+// ? negative index slice
+const phrase="Hello, World";
+const ext2=phrase.slice(-6);
+
+console.log(ext2);
+
+// string split method
+const exp="Hello World "
+const split=exp.slice(" ");
+//split string with mixed string
+const fruits="apple:banana;pear";
+const split1=fruits.split(/[:;]/); 
+ 
+const letter="ABCDE";
+const exp3=letters.split("");
+// trim method
+const email=`     example@gmail.com     `;
+const trimEmail=email.trim();
+// replace method in string
+const oldText="this is old text";
+const newText=oldText.replace('old','new');
+// replace repititive text
+const repitive='old text with old world';
+const replace=repitive.replace(/old/g,'new');
