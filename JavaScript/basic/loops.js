@@ -35,3 +35,21 @@ const evenNum=numb.filter(function(num){
 })
 console.log(evenNum);
 
+// reduce method 
+const numbers=[1,2,3,4,5,6];
+const sum=numbers.reduce(function(acc,curr){
+    return acc+curr;
+},0);
+console.log(sum);
+// frequence cnt
+
+const fruit=['apple','banana','apple','banana','apple','kiwi','mango'];
+const fruitCnt=fruit.reduce(function(acc,curr){
+ if(acc[curr]){
+    acc[curr]+=1;
+ }else{
+    acc[curr]=1;
+ }
+ return acc;
+},{})
+console.log(fruitCnt);
