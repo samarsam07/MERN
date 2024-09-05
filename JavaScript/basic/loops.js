@@ -45,11 +45,11 @@ console.log(sum);
 
 const fruit=['apple','banana','apple','banana','apple','kiwi','mango'];
 const fruitCnt=fruit.reduce(function(acc,curr){
- if(acc[curr]){
-    acc[curr]+=1;
- }else{
-    acc[curr]=1;
- }
- return acc;
+    if(acc[curr]){
+        acc[curr]+=1;
+    }else{
+        acc[curr]=1;
+    }
+    return acc;
 },{})
 console.log(fruitCnt);
