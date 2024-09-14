@@ -24,3 +24,4 @@ sayHello();
         console.log("odd");
     }
 })();
+// Arrow Functions in js Es06
