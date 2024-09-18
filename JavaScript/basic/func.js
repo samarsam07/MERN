@@ -25,3 +25,12 @@ sayHello();
     }
 })();
 // Arrow Functions in js Es06
+
+const multiply=(a,b) => a*b;
+
+const result=multiply(2,3);
+// block
+const greet=(name)=>{
+    return `hello, ${name}`;
+}
+const say=greet(`user`);
