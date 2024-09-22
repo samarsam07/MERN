@@ -34,3 +34,10 @@ const greet=(name)=>{
     return `hello, ${name}`;
 }
 const say=greet(`user`);
+// destructure
+
+const number=[1,2,3,4];
+const [one,two,three,four]=number;
+
+// destructuring objects
+const {name,age}={name:`username`,age:21};
