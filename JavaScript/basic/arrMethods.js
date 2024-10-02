@@ -34,9 +34,13 @@ const indexToRemove=tasks.findIndex((item)=>{
 });
 console.log(indexToRemove);
 if(indexToRemove!==-1){
-    tasks.splice(indexToRemove,1);
+    const [notComplete]=tasks.splice(indexToRemove,1);
+    console.log(notComplete);
+    tasks.splice(0,0,notComplete);
 }
 console.log(tasks);
+
+
 
 
 
