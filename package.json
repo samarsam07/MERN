@@ -1,0 +1,18 @@
+{
+  "name": "expressjs",
+  "version": "2.0.0",
+  "description": "getting started with expressjs",
+  "main": "\tapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "samar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
