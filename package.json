@@ -2,9 +2,10 @@
   "name": "expressjs",
   "version": "2.0.0",
   "description": "getting started with expressjs",
-  "main": "\tapp.js",
+  "main": "\tbookApi.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node bookApi.js",
+    "server":"nodemon bookApi.js"
   },
   "keywords": [
     "expressjs",
@@ -14,5 +15,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
   }
 }
