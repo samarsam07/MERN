@@ -1,8 +1,9 @@
 const express =require('express');
 // import userRoute
-const userRouter = require('./route/userRoute');
+const userRouter = require('./route/routerChain');
 // import postRoute
 const postRouter = require('./route/postRouter');
+const isAuthenticated=require("./middleware/isAuthenticated");
 
 const app = express();
 app.use(express.json());
@@ -17,7 +18,7 @@ app.get('/',(req,res)=>{
     });
 });
 // route for all data
-app.use('/users',userRouter);
+app.use('/users',isAuthenticated,userRouter);
 // post route
 app.use('/posts',postRouter);
 
