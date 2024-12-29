@@ -1,4 +1,6 @@
+// const express = require("expressjs");
 const express = require("express");
+const ejslayout = require("express-ejs-layouts");
 const path = require("path");
 const app = express();
 const port = 8082;
@@ -6,6 +8,11 @@ const port = 8082;
 app.use(express.static(path.join(__dirname, "public")));
 // set view engine
 app.set("view engine", "ejs");
+// app.use(ejslayout);
+// set views path
+// app.set("layouts","layouts/main-layout");
+// app.set("views", path.join(__dirname, "view"));
+
 
 //home page
 app.get("/", (req, res) => {
@@ -58,8 +65,16 @@ app.get("/products", (req, res) => {
   ];
   res.render("products.ejs", {products});
 });
-// start the server
+// 404 error handler
+app.use((req,res,next)=>{
+  const error = new Error("Page not found");
+  next(error);
+})
+app.use((err,req,res,next)=>{
+  res.render("error.ejs",{message:err.message});
+})
 
+// server listening
 app.listen(port, () => {
-  console.log(`server is running on port ${port}`);
+  console.log(`Server is running at http://localhost:${port}`);
 });
